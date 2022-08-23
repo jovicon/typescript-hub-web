@@ -22,7 +22,7 @@ const FeatureList = [
         Si eres especialista en algún framework, librería o SDK con typescript,
         este es el lugar para que puedas compartir y guardar conocimientos. O si
         vienes para aprender, puedes buscarlo en nuestra biblioteca o conocer
-        alguien que lo sepa y compartirlo con nosotros.
+        alguien que lo sepa y luego compartirlo con nosotros.
       </>
     ),
   },

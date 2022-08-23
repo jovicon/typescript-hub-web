@@ -49,16 +49,11 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-      }),
-    ],
-    [
-      "@docusaurus/preset-classic",
-      {
         gtag: {
           trackingID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
           anonymizeIP: true,
         },
-      },
+      }),
     ],
   ],
 

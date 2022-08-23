@@ -49,10 +49,16 @@ const config = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
-        googleAnalytics: {
-          trackingID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
-        },
       }),
+    ],
+    [
+      "@docusaurus/preset-classic",
+      {
+        gtag: {
+          trackingID: process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID,
+          anonymizeIP: true,
+        },
+      },
     ],
   ],
 

@@ -5,45 +5,55 @@ import styles from "./styles.module.css";
 const FeatureList = [
   {
     title: "Todo sobre Typescript",
-    Svg: require("@site/static/img/undraw_docusaurus_mountain.svg").default,
+    src: require("@site/static/img/home/arcade.png").default,
     description: (
       <>
-        Si estás buscando un tutorial sobre typescript, este es el lugar. Y si
-        no lo encuentras, puedes crearlo tu mismo para compartirlo con otros
-        desarrolladores.
+        Nuestra foco como comunidad es concentrar el amplio conocimiento
+        extendido de typescript en un lugar confiable, de libre uso, facil
+        acceso y alta calidad.
       </>
     ),
   },
   {
-    title: "Apasionados por aprender y enseñar",
-    Svg: require("@site/static/img/undraw_docusaurus_tree.svg").default,
+    title: "Apasionados por aprender",
+    src: require("@site/static/img/home/education.png").default,
     description: (
       <>
-        Si eres especialista en algún framework, librería o SDK con typescript,
-        este es el lugar para que puedas compartir y guardar conocimientos. O si
-        vienes para aprender, puedes buscarlo en nuestra biblioteca o conocer
-        alguien que lo sepa y luego compartirlo con nosotros.
+        Si tu interes es aprender, este es el lugar correcto, puedes buscar en
+        nuestra biblioteca, conocer expertos en nuestro canal de discord o
+        realizar pedidos de tutoriales.
       </>
     ),
   },
   {
-    title: "Avanzamos y compartimos",
-    Svg: require("@site/static/img/undraw_docusaurus_react.svg").default,
+    title: "Dedicados a enseñar",
+    src: require("@site/static/img/home/level-up.png").default,
     description: (
       <>
-        Participa en la comunidad de desarrolladores Typescript y comparte tu
-        experiencia con nosotros, siguenos en twitter y únete a nuestro canal de
-        discord.
+        Si eres especialista en algún framework, librería o SDK desarrollado con
+        typescript, este es el lugar para que puedas compartir tutoriales,
+        buenas practicas o almacenar documentación para ti y los demás.
+      </>
+    ),
+  },
+  {
+    title: "Compartimos y avanzamos",
+    src: require("@site/static/img/home/community.png").default,
+    description: (
+      <>
+        Somos una comunidad en continuo crecimiento y por eso nos interesa tu
+        opinión, tus ideas y aportes. Unete a nuestras redes sociales y canal de
+        discord. Te esperamos.
       </>
     ),
   },
 ];
 
-function Feature({ Svg, title, description }) {
+function Feature({ src, title, description }) {
   return (
-    <div className={clsx("col col--4")}>
+    <div className={clsx("col col--3")}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={src} className={styles.homeMainImg} role="img" />
       </div>
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>

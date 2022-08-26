@@ -1,6 +1,14 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
+// image attribution: https://www.pexels.com/photo/white-and-black-abstract-painting-1089397/
+/* 
+<a href="https://www.flaticon.com/free-icons/arcade" title="arcade icons">Arcade icons created by Freepik - Flaticon</a> 
+<a href="https://www.flaticon.com/free-icons/video-game" title="video game icons">Video game icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/people" title="people icons">People icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/level-up" title="level up icons">Level up icons created by Freepik - Flaticon</a>
+*/
+
 const lightCodeTheme = require("prism-react-renderer/themes/github");
 const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 require("dotenv").config();
@@ -8,7 +16,7 @@ require("dotenv").config();
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Typescript Hub",
-  tagline: "La comunidad de desarrolladores Typescript",
+  tagline: "Bienvenido a la comunidad de Typescript.",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -24,7 +32,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en"],
+    locales: ["en", "es"],
   },
 
   presets: [
@@ -73,10 +81,14 @@ const config = {
             position: "left",
             label: "Biblioteca",
           },
-          // { to: "/blog", label: "Blog", position: "left" },
+          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/jovicon/typescript-hub-web",
             label: "GitHub",
+            position: "right",
+          },
+          {
+            type: "localeDropdown",
             position: "right",
           },
         ],
@@ -88,7 +100,7 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
+                label: "Biblioteca",
                 to: "/docs/intro",
               },
             ],
@@ -97,17 +109,13 @@ const config = {
             title: "Community",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
-              },
-              {
                 label: "Discord",
                 href: "https://discord.gg/H2xNjPvk8r",
               },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
-              },
+              // {
+              //   label: "Twitter",
+              //   href: "https://twitter.com/docusaurus",
+              // },
             ],
           },
           {
@@ -119,12 +127,12 @@ const config = {
               },
               {
                 label: "GitHub",
-                href: "https://github.com/facebook/docusaurus",
+                href: "https://github.com/jovicon/typescript-hub-web",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus 2.`,
       },
       prism: {
         theme: lightCodeTheme,

@@ -35,3 +35,18 @@
 .hero {
   color: var(--ifm-color-white);
 }
+
+.icon-desktop {
+  height: 50px;
+  width: 50px;
+  margin-bottom: 1rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}

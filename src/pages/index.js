@@ -6,19 +6,32 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 
-import styles from "./index.module.css";
+import indexStyles from "./index.module.css";
+
+const love = require("@site/static/img/home/love.png").default;
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx("hero hero--primary", styles.heroBanner)}>
+    <header className={clsx("hero hero--primary", indexStyles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
+        <div class="row">
+          <div class="col col--12 flex-container">
+            <h1 className="hero__title padding--sm">{siteConfig.title}</h1>
+            <img src={love} className="icon-desktop" />
+          </div>
+        </div>
+
         <p className="hero__subtitle white">{siteConfig.tagline}</p>
         <p className="hero__subtitle white">
-          Actualmente la pagina se encuentra en construcción
+          Este hub se encuentra en desarrollo y creciendo cada dia.
         </p>
-        <div className={styles.buttons}>
+
+        {/* TODO: Agregar URL para postular */}
+        {/* <p className="hero__subtitle white">
+          Postula aqui para ser colaborador.
+        </p> */}
+        <div className={indexStyles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro"

@@ -31,8 +31,8 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "es"],
+    defaultLocale: "es",
+    locales: ["es"],
   },
 
   presets: [
@@ -82,6 +82,7 @@ const config = {
             label: "Biblioteca",
           },
           { to: "/blog", label: "Blog", position: "left" },
+          { to: "/contact/posts", label: "Pedidos", position: "left" },
           {
             href: "https://github.com/jovicon/typescript-hub-web",
             label: "GitHub",

@@ -81,8 +81,8 @@ const config = {
             position: "left",
             label: "Biblioteca",
           },
-          { to: "/blog", label: "Blog", position: "left" },
-          { to: "/contact/posts", label: "Pedidos", position: "left" },
+          // { to: "/blog", label: "Blog", position: "left" },
+          // { to: "/contact/posts", label: "Pedidos", position: "left" },
           {
             href: "https://github.com/jovicon/typescript-hub-web",
             label: "GitHub",
@@ -122,10 +122,10 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
+              // {
+              //   label: "Blog",
+              //   to: "/blog",
+              // },
               {
                 label: "GitHub",
                 href: "https://github.com/jovicon/typescript-hub-web",
@@ -133,7 +133,7 @@ const config = {
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus 2.`,
+        copyright: `Copyright © ${new Date().getFullYear()} TypescriptHub, Inc. Built with Docusaurus 2.`,
       },
       prism: {
         theme: lightCodeTheme,

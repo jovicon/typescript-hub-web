@@ -2,9 +2,9 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introducción a Typescript
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Comencemos a programar con **typescript en menos de 5 minutos**.
 
 ## Getting Started
 

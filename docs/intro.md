@@ -6,6 +6,26 @@ sidebar_position: 1
 
 Comencemos a programar con **typescript en menos de 5 minutos**.
 
+## Comencemos
+
+Iniciaremos nuestro camino de aprendizaje typescript con un script sencillo, creando algunas variables, constantes, tipos e imprimiendo resultados.
+
+### ¿Que necesitaras para iniciar?
+
+- Instalar [Visual Studio Code](https://code.visualstudio.com/download) o algún editor de texto.
+- Instalar **NodeJs** version 16.14 o superior con alguna de las siguientes opciones:
+  - Directamente de la pagina oficial - [Node.js](https://nodejs.org/en/download/)
+  - Instalar [NVM](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) - **opción recomendada**
+- Instalar el compilador de typescript con uno de los siguientes comandos:
+  - De forma global - **opción inicial recomendada**
+  ```bash
+  npm install typescript -g
+  ```
+  - Como Dependencia de proyecto
+  ```bash
+  npm install typescript --save-dev
+  ```
+
 ## Getting Started
 
 Get started by **creating a new site**.

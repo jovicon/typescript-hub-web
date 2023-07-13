@@ -49,19 +49,47 @@ Abre el archivo que creaste con un editor de texto y escribe tu primer script en
 
 ```typescript
 // Mi primer código en typescript
-const world: string = "world";
+const world: string = "world!";
 
 console.log("hello ", world);
 ```
 
 ### Compila el código
 
-Typescript al ser un superset de Javascript, necesita ser compilado para que pueda ser ejecutado por NodeJs.
+**Typescript al ser un superset de Javascript** necesita ser compilado para que pueda ser ejecutado por NodeJs.
 Para ejecutarlo debes abrir una terminal o linea de comandos, tienes que dirigirte hasta el directorio o carpeta que se encuentra tu archivo y ejecutar el siguiente comando:
 
 ```bash
 tsc nombre-archivo.ts
 ```
+
+### Ejecutemos el código Javascript
+
+Una vez que el código TypeScript ha sido compilado, puedes ejecutar el archivo JavaScript resultante con Node.js. En la terminal, ejecuta el siguiente comando:
+
+```bash
+node nombre-archivo.js
+```
+
+Deberías ver la salida "hello world!" en la pantalla de la consola.
+
+:::tip
+
+**_PROTIP_**
+
+Para evitar la compilación y ejecutar directamente nuestro archivo typescript, podemos instalar adicional la libreria [ts-node](https://www.npmjs.com/package/ts-node) con el siguiente comando:
+
+```bash
+npm install -g ts-node
+```
+
+Y luego ejecutar nuestro archivo con el siguiente comando:
+
+```bash
+ts-node nombre-archivo.ts
+```
+
+:::
 
 ## Getting Started
 

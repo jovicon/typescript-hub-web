@@ -43,7 +43,7 @@ touch index.ts
 
 :::
 
-### Escribe tu primer código Typescript
+### Escribe tu primer código en Typescript
 
 Abre el archivo que creaste con un editor de texto y escribe tu primer script en typescript:
 
@@ -77,7 +77,7 @@ Deberías ver la salida "hello world!" en la pantalla de la consola.
 
 **_PROTIP_**
 
-Para evitar la compilación y ejecutar directamente nuestro archivo typescript, podemos instalar adicional la libreria [ts-node](https://www.npmjs.com/package/ts-node) con el siguiente comando:
+Para evitar la compilación a Javascript y ejecutar directamente nuestro archivo typescript, podemos instalar adicional la libreria [ts-node](https://www.npmjs.com/package/ts-node) con el siguiente comando:
 
 ```bash
 npm install -g ts-node
@@ -91,42 +91,8 @@ ts-node nombre-archivo.ts
 
 :::
 
-## Getting Started
+## Conclusión
 
-Get started by **creating a new site**.
+Felicitaciones!!! Seguiste muy bien los pasos básicos para comenzar a programar con TypeScript.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
-```bash
-npm init docusaurus@latest my-website classic
-```
-
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
-```bash
-cd my-website
-npm run start
-```
-
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
-
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
-
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+En los siguientes modulos, exploraremos características avanzadas como **tipos estáticos, interfaces, clases y módulos** para aprovechar al máximo el poder de TypeScript.

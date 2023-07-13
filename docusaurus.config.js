@@ -24,7 +24,7 @@ const config = {
   favicon: "img/favicon.ico",
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "jovicon", // Usually your GitHub org/user name.
+  organizationName: "Jovicon", // Usually your GitHub org/user name.
   projectName: "Typescript hub", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful

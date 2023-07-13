@@ -2,46 +2,97 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# Introducción a Typescript
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Como comenzar a programar con **typescript en menos de 5 minutos**.
 
-## Getting Started
+## Comencemos
 
-Get started by **creating a new site**.
+Iniciaremos nuestro camino de aprendizaje typescript con un script sencillo, creando algunas variables, constantes, tipos e imprimiendo resultados.
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+### ¿Que necesitaras para iniciar?
 
-### What you'll need
+- Instalar **[Visual Studio Code](https://code.visualstudio.com/download)** o algún editor de texto.
+- Instalar **NodeJs** version 16.14 o superior con alguna de las siguientes opciones:
+  - Directamente de la pagina oficial - [Node.js](https://nodejs.org/en/download/)
+  - Instalar [NVM](https://www.freecodecamp.org/news/node-version-manager-nvm-install-guide/) - **opción recomendada**
+- Instalar el compilador de typescript con uno de los siguientes comandos:
+  - De forma global - **opción inicial recomendada**
+  ```bash
+  npm install typescript -g
+  ```
+  - Como Dependencia de proyecto
+  ```bash
+  npm install typescript --save-dev
+  ```
 
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
+## Primeros pasos
 
-## Generate a new site
+### Crea tu primer archivo Typescript
 
-Generate a new Docusaurus site using the **classic template**.
+Crea una nueva carpeta o directorio para tu proyecto inicial y dentro de la carpeta crea un archivo de extensión o que termine con
+'**.ts**'. Para crear y editar nuestro nuevo archivo debemos usar el editor de texto instalado anteriormente.
 
-The classic template will automatically be added to your project after you run the command:
+:::tip
+
+Si estas desarrollando en **linux** o **mac**, puedes crear un archivo con el comando touch
 
 ```bash
-npm init docusaurus@latest my-website classic
+touch index.ts
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
+:::
 
-The command also installs all necessary dependencies you need to run Docusaurus.
+### Escribe tu primer código en Typescript
 
-## Start your site
+Abre el archivo que creaste con un editor de texto y escribe tu primer script en typescript:
 
-Run the development server:
+```typescript
+// Mi primer código en typescript
+const world: string = "world!";
+
+console.log("hello ", world);
+```
+
+### Compila el código
+
+**Typescript al ser un superset de Javascript** necesita ser compilado para que pueda ser ejecutado por NodeJs.
+Para ejecutarlo debes abrir una terminal o linea de comandos, tienes que dirigirte hasta el directorio o carpeta que se encuentra tu archivo y ejecutar el siguiente comando:
 
 ```bash
-cd my-website
-npm run start
+tsc nombre-archivo.ts
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+### Ejecutemos el código Javascript
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Una vez que el código TypeScript ha sido compilado, puedes ejecutar el archivo JavaScript resultante con Node.js. En la terminal, ejecuta el siguiente comando:
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+```bash
+node nombre-archivo.js
+```
+
+Deberías ver la salida "hello world!" en la pantalla de la consola.
+
+:::tip
+
+**_PROTIP_**
+
+Para evitar la compilación a Javascript y ejecutar directamente nuestro archivo typescript, podemos instalar adicional la libreria [ts-node](https://www.npmjs.com/package/ts-node) con el siguiente comando:
+
+```bash
+npm install -g ts-node
+```
+
+Y luego ejecutar nuestro archivo con el siguiente comando:
+
+```bash
+ts-node nombre-archivo.ts
+```
+
+:::
+
+## Conclusión
+
+Felicitaciones!!! Seguiste muy bien los pasos básicos para comenzar a programar con TypeScript.
+
+En los siguientes modulos, exploraremos características avanzadas como **tipos estáticos, interfaces, clases y módulos** para aprovechar al máximo el poder de TypeScript.
